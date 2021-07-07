@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/doggy-dates",
+      "handler": "doggy-date.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/doggy-dates/count",
+      "handler": "doggy-date.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/doggy-dates/:id",
+      "handler": "doggy-date.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/doggy-dates",
+      "handler": "doggy-date.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/doggy-dates/:id",
+      "handler": "doggy-date.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/doggy-dates/:id",
+      "handler": "doggy-date.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

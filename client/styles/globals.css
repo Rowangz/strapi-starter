@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 15px;
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doggy_dates",
+  "info": {
+    "name": "Doggy Date"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "omschrijving": {
+      "type": "text"
+    },
+    "datum": {
+      "type": "date"
+    },
+    "tijdstip": {
+      "type": "time"
+    },
+    "prive": {
+      "type": "boolean"
+    },
+    "reactie": {
+      "via": "doggy_date",
+      "model": "reacties"
+    }
+  }
+}

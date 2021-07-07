@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "honds",
+  "info": {
+    "name": "Hond"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "naam": {
+      "type": "string"
+    },
+    "ras": {
+      "type": "string"
+    },
+    "gecastreerd": {
+      "type": "boolean"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "hond"
+    }
+  }
+}
