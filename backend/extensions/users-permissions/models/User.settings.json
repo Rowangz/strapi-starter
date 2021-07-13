@@ -69,10 +69,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "hond": {
-      "via": "users_permissions_user",
-      "model": "hond"
     }
   }
 }
